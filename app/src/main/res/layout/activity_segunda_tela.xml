@@ -72,16 +72,24 @@
                 android:background="@drawable/input_text"
                 android:layout_marginEnd="10dp">
 
-                <ImageView
-                    android:id="@+id/imageGameOne"
+                <androidx.cardview.widget.CardView
                     android:layout_width="240dp"
                     android:layout_height="140dp"
-                    android:src="@drawable/game_one"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintVertical_bias=".07"/>
+                    app:layout_constraintVertical_bias=".07"
+                    android:id="@+id/imageGameOne"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="240dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/game_one" />
+
+                </androidx.cardview.widget.CardView>
+
 
                 <TextView
                     android:id="@+id/descriptionGameOne"
@@ -156,16 +164,23 @@
                 android:background="@drawable/input_text"
                 android:layout_marginEnd="10dp">
 
-                <ImageView
-                    android:id="@+id/imageGameTwo"
+                <androidx.cardview.widget.CardView
                     android:layout_width="240dp"
                     android:layout_height="140dp"
-                    android:src="@drawable/game_one"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintVertical_bias=".07"/>
+                    app:layout_constraintVertical_bias=".07"
+                    android:id="@+id/imageGameTwo"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="240dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/game_one" />
+
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:id="@+id/descriptionGameTwo"
@@ -240,16 +255,23 @@
                 android:background="@drawable/input_text"
                 android:layout_marginEnd="10dp">
 
-                <ImageView
-                    android:id="@+id/imageGameThree"
+                <androidx.cardview.widget.CardView
                     android:layout_width="240dp"
                     android:layout_height="140dp"
-                    android:src="@drawable/game_one"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintVertical_bias=".07"/>
+                    app:layout_constraintVertical_bias=".07"
+                    android:id="@+id/imageGameThree"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="240dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/game_one" />
+
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:id="@+id/descriptionGameThree"
@@ -349,11 +371,18 @@
                 android:layout_height="150dp"
                 android:layout_marginEnd="10dp">
 
-                <ImageView
-                    android:id="@+id/imageTheWitcher"
+                <androidx.cardview.widget.CardView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/the_witcher"/>
+                    android:id="@+id/imageTheWitcher"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/the_witcher"/>
+
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -376,11 +405,18 @@
                 android:layout_height="150dp"
                 android:layout_marginEnd="10dp">
 
-                <ImageView
-                    android:id="@+id/imagePortal"
+                <androidx.cardview.widget.CardView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/portal"/>
+                    android:id="@+id/imagePortal"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/portal"/>
+
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -403,11 +439,18 @@
                 android:layout_height="150dp"
                 android:layout_marginEnd="10dp">
 
-                <ImageView
-                    android:id="@+id/imageGodOfWar"
+                <androidx.cardview.widget.CardView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/god_of_war"/>
+                    android:id="@+id/imageGodOfWar"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/god_of_war"/>
+
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -430,11 +473,19 @@
                 android:layout_height="150dp"
                 android:layout_marginEnd="10dp">
 
-                <ImageView
-                    android:id="@+id/imageTheWitcher2"
+                <androidx.cardview.widget.CardView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/the_witcher"/>
+                    android:id="@+id/imageTheWitcher2"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/the_witcher"/>
+
+                </androidx.cardview.widget.CardView>
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -457,11 +508,20 @@
                 android:layout_height="150dp"
                 android:layout_marginEnd="10dp">
 
-                <ImageView
-                    android:id="@+id/imagePortal2"
+                <androidx.cardview.widget.CardView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/portal"/>
+                    android:id="@+id/imagePortal2"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/portal"/>
+
+                </androidx.cardview.widget.CardView>
+
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -484,11 +544,18 @@
                 android:layout_height="150dp"
                 android:layout_marginEnd="10dp">
 
-                <ImageView
-                    android:id="@+id/imageGodOfWar2"
+                <androidx.cardview.widget.CardView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/god_of_war"/>
+                    android:id="@+id/imageGodOfWar2"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/god_of_war"/>
+
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
