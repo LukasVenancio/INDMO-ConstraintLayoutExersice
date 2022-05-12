@@ -7,17 +7,23 @@
     android:background="#242734"
     tools:context=".SegundaTela">
 
-    <ImageView
-        android:id="@+id/imageUser"
+    <androidx.cardview.widget.CardView
         android:layout_width="42dp"
         android:layout_height="42dp"
-        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imageUser"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/input"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias=".04"
-        />
+        app:cardCornerRadius="18dp">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@mipmap/ic_launcher" />
+
+    </androidx.cardview.widget.CardView>
 
     <EditText
         android:id="@+id/input"

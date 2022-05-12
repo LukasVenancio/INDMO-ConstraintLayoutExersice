@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuartaTela"
+    android:background="#242734">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:id="@+id/imageUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/viewGame"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".04"
+        app:cardCornerRadius="18dp">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@mipmap/ic_launcher" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/viewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Game"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/turretroad_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageUser"
+        app:layout_constraintEnd_toStartOf="@id/arrowBack"
+        app:layout_constraintVertical_bias=".055"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/arrowBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="20dp"
+        android:background="#424657"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/viewGame"
+        app:layout_constraintVertical_bias=".046">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#424657"
+            android:src="@drawable/vector"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardGame"
+        android:layout_width="320dp"
+        android:layout_height="280dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewGame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".15">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/god_card_view"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/turretroad_bold"
+        android:text="God Of War: Ascension"
+        android:textSize="24sp"
+        android:shadowColor="@color/black"
+        android:shadowDy="5"
+        android:shadowDx="5"
+        android:shadowRadius="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias=".05"/>
+
+    <ScrollView
+        android:id="@+id/gameDescription"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/gameTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".1"
+        android:paddingStart="5dp">
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/turretroad_bold"
+            android:textSize="14sp"
+            android:text="This prequel to the very first game in the God of War series and the seventh game in the franchise. It is exclusive for the Sony PlayStation 3 console. The game still uses the ancient Greek mythology as visual inspiration and the primary story source.
+The player takes control over the warrior Kratos. At the beginning of the game, the protagonist was imprisoned after he violated the blood oath given to the god of war Ares. One of the three goddesses of revenge Megera tortures Kratos, but he manages to break free and start the path to revenge on the gods of Olympus.
+Kratos still uses the dual Blade of Chaos. They can be improved, but this is not the only weapon in the game: other weapons are available for purchase thanks to the new World Weapons mechanics. The gameplay is no different from the other games of the series: the player still needs to connect the attacks in combos and arrange hack and slash mayhem. This is the only game in the series, in which multiplayer is available for eight people: the main task is to seize control of the card and get a reward from the gods."
+            />
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gameDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGameOne"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/plataformas"
+        app:layout_constraintHorizontal_chainStyle="spread">
+
+        <ImageView
+            android:id="@+id/nitendoGameOne"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/nintendo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/windowsGameOne"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+
+        <ImageView
+            android:id="@+id/windowsGameOne"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/windows"
+            app:layout_constraintStart_toEndOf="@+id/nitendoGameOne"
+            app:layout_constraintEnd_toStartOf="@+id/androidGameOne"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            />
+
+        <ImageView
+            android:id="@+id/androidGameOne"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/android"
+            app:layout_constraintStart_toEndOf="@id/windowsGameOne"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonGameOne"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:background="#FFAF29"
+        app:layout_constraintTop_toBottomOf="@id/gameDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plataformas"
+        android:text="Watch"
+        android:fontFamily="@font/turretroad_bold"
+        android:textSize="10sp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".QuartaTela"
+            android:exported="false" />
+        <activity
+            android:name=".TerceiraTela"
+            android:exported="false" />
+        <activity
             android:name=".SegundaTela"
             android:exported="false" />
         <activity

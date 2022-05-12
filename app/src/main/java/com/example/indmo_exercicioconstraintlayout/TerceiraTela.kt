@@ -6,18 +6,18 @@ import android.os.Bundle
 import java.util.*
 import kotlin.concurrent.schedule
 
-class SegundaTela : AppCompatActivity() {
+class TerceiraTela : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_segunda_tela)
+        setContentView(R.layout.activity_terceira_tela)
 
-        Timer().schedule(10000){abrirTerceiraActivty()}
+        Timer().schedule(10000){abrirQuartaActivty()}
 
     }
 
-    private fun abrirTerceiraActivty() {
+    private fun abrirQuartaActivty() {
 
-        val intent = Intent(this, TerceiraTela::class.java)
+        val intent = Intent(this, QuartaTela::class.java)
         startActivity(intent)
         finish()
     }
